@@ -9,13 +9,16 @@
 // Output: [2,3,5,4,1,7] 
 // Explanation: Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,4,1,7].
 
-class Solution {
+class Solution
+{
 public:
-    vector<int> shuffle(vector<int>& nums, int n) {
+    vector<int> shuffle(vector<int>& nums, int n)
+    {
         vector<int> arr;
-        for(int i = 0;i<n;i++){
-        arr.push_back(nums[i]);
-        arr.push_back(nums[n+i]);  
+        for(int i = 0;i<n;i++)
+        {
+            arr.push_back(nums[i]);
+            arr.push_back(nums[n+i]);  
         }
         return arr;
     }
